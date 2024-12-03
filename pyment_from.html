@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" nethod="get">
+            <h1 class="main_heading">Pyment Form</h1>
+            <hr>
+            <h2>User information</h2>
+            <p> Name:*
+                <input type="text" required name="name" placeholder="Oom pandey">
+            </p>
+            <p>
+                <fieldset>
+                    <legend>Gender</legend>
+                    Male<input type="radio" name="Gender" id="Male" value="H" required> Female
+
+                </fieldset>
+            </p>
+            <p>
+                Addres:
+                <textarea placeholder="Enter Your Addres" id="Addres" cols="100"></textarea>
+            </p>
+            <p>
+                Email:
+                <input type="email" name="email" id="email"required placeholder="pandey@gmail.com"></input>
+            </p>
+            <p>
+                Pincode:
+                <input type="pincode" name="pincode" id="pincode" placeholder="123456">
+            </p>
+            <h2>Pyment information</h2>
+            <p>Card Type:
+                <select name="card_type" id="card_type" required>
+                    <option value="">---Select Card Type---</option>
+                    <option value="visa">visa</option>
+                    <option value="Musterd">Musterd</option>
+                    <option value="rupey">rupey</option>
+
+
+                </select>
+
+            </p> 
+            <p>
+                Card Number: *
+                <input type="number" name="card_number" id="card_number" required>
+            </p>
+            <p>
+                Expiration Date
+                <input type="date" name="exp_date" id="exp_date" required>
+            </p>
+            <p>
+                cvv
+                <input type="password" name="cvv" id="cvv" required placeholder="123">
+            </p>
+            <input type="submit" value="pay now">
+            </form>
+            </div>
+
+    
+</body>
+</html>
