@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two-Column Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+    }
+    .container {
+      display: flex;
+      height: 100%;
+    
+    }
+    .column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+
+    }
+    .column.one {
+      /* background-color: lightblue; */
+       /* First column background */
+  border: 1px solid lightblue;
+    }
+    .column.two {
+      /* background-color: lightgray; */
+      border: 1px solid lightgrey;
+   gap: 0px;
+       /* Second column background */
+    }
+    .column.one .full-height {
+      flex: 1;
+      background-color: lightgreen;
+      padding: 20px;
+    }
+    .column.two .third-height {
+      flex: 1;
+      background-color: lightgreen;
+      border: 1px solid white; /* Optional for visibility */
+      padding: 20px
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- First Column -->
+    <div class="column one">
+      <div class="full-height">1</div>
+    </div>
+    <!-- Second Column -->
+    <div class="column two">
+      <div class="third-height">2</div>
+      <div class="third-height">3</div>
+    
+    </div>
+     <!-- Second Column -->
+     <div class="column two">
+        <div class="third-height">4</div>
+        <div class="third-height">5</div>
+        <div class="third-height">6</div>
+      </div>
+      <div class="column two">
+        <div class="third-height">7</div>
+        <div class="third-height">8</div>
+        <div class="third-height"> 9</div>
+        <div class="third-height"> 10</div>
+      </div>
+      <div class="column two">
+        <div class="third-height">11</div>
+        <div class="third-height">12</div>
+        <div class="third-height"> 13</div>
+        <div class="third-height"> 14</div>
+        <div class="third-height"> 15</div>
+        <div class="third-height"> 16</div>
+      </div>
+      <div class="column two">
+        <div class="third-height">17</div>
+        <div class="third-height">18</div>
+        <div class="third-height"> 19</div>
+        <div class="third-height"> 20</div>
+        <div class="third-height"> 21</div>
+        <div class="third-height"> 22</div>
+        <div class="third-height"> 23</div>
+        <div class="third-height"> 24</div>
+        <div class="third-height"> 25</div>
+        <div class="third-height"> 26</div>
+        <div class="third-height"> 27</div>
+        <div class="third-height"> 28</div>
+      </div>
+  </div>
+</body>
+</html>

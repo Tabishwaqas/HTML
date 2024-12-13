@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example</title>
+    <style>
+        .container{
+            display: flex;
+            /* flex: 1; */
+            gap: 20px;
+            background-color: grey;
+        }
+        .coloumn{
+            background-color: lightgreen;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex: 1;
+        }
+        .height1{
+            padding: 20px;
+            border: 1px solid blue;
+            flex-direction: column;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="coloumn">
+          <div class="height1">1</div>
+        </div>
+        <div class="coloumn">
+            <div class="height1">2</div>
+            <div class="height1">3</div>
+          </div>
+          <div class="coloumn">
+            <div class="height1">2</div>
+            <div class="height1">3</div>
+            <div class="height1">3</div>
+            <div class="height1">3</div>
+          </div>
+</body>
+</html>
